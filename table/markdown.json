@@ -1,0 +1,116 @@
+{
+    "inputType": "Markdown",
+    "outputType": ["pukiWiki"],
+    "notations": [
+        {
+            "name": "見出し(h1)",
+            "regexp": "^# ",
+            "pukiWiki": "* "
+        },
+        {
+            "name": "見出し(h2)",
+            "regexp": "^#{2} ",
+            "pukiWiki": "** "
+        },
+        {
+            "name": "見出し(h3)",
+            "regexp": "^#{3} ",
+            "pukiWiki": "*** "
+        },
+        {
+            "name": "見出し(h4)",
+            "regexp": "^#{4} ",
+            "pukiWiki": null
+        },
+        {
+            "name": "見出し(h5)",
+            "regexp": "^#{5} ",
+            "pukiWiki": null
+        },
+        {
+            "name": "見出し(h6)",
+            "regexp": "^#{6} ",
+            "pukiWiki": null
+        },
+        {
+            "name": "太字",
+            "regexp": "[^\\*]\\*{1}([^\\*]+?)\\*{1}[^\\*]",
+            "pukiWiki": "''$1''"
+        },
+        {
+            "name": "斜体",
+            "regexp": "\\*{2}(.+?)\\*{2}",
+            "pukiWiki": "'''$1'''"
+        },
+        {
+            "name": "訂正線",
+            "regexp": "~~(.+?)~~",
+            "pukiWiki": "%%$1%%"
+        },
+        {
+            "name": "リンク",
+            "regexp": "\\[(.+?)\\]\\((.+?)\\)",
+            "pukiWiki": "[[$1:$2]]"
+        },
+        {
+            "name": "引用",
+            "regexp": "^> ",
+            "pukiWiki": "> "
+        },
+        {
+            "name": "二重引用",
+            "regexp": "^>> ",
+            "pukiWiki": ">> "
+        },
+        {
+            "name": "コード",
+            "regexp": null,
+            "pukiWiki": null
+        },
+        {
+            "name": "チェックリスト",
+            "regexp": "\\s[.] ",
+            "pukiWiki": null
+        },
+        {
+            "name": "箇条書きリスト",
+            "regexp": "^[-\\+\\*] ",
+            "pukiWiki": "- "
+        },
+        {
+            "name": "箇条書きリスト2",
+            "regexp": "^( {4}|\\t){1}[-\\+\\*] ",
+            "pukiWiki": "-- "
+        },
+        {
+            "name": "箇条書きリスト3",
+            "regexp": "^( {4}|\\t){2}[-\\+\\*] ",
+            "pukiWiki": "--- "
+        },
+        {
+            "name": "番号付きリスト",
+            "regexp": "^\\s*\\d+\\. ",
+            "pukiWiki": "+ "
+        },
+        {
+            "name": "ファイル",
+            "regexp": null,
+            "pukiWiki": "#ref()"
+        },
+        {
+            "name": "水平線",
+            "regexp": "^[-\\*_]{3,}$",
+            "pukiWiki": "----"
+        },
+        {
+            "name": "Table",
+            "regexp": null,
+            "pukiWiki": null
+        },
+        {
+            "name": "注釈",
+            "regexp": null,
+            "pukiWiki": null
+        }
+    ]
+}

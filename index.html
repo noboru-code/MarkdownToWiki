@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Markdown To Wiki</title>
+    <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="inputArea">
+            入力: <select name="inputType" id="inputType" v-model="selectedInputType" v-on:focus="setInputType" v-on:change="setOutputType">
+                <option v-for="type in inputType" :value="type">{{type}}</option>
+            </select>
+            <br/>
+            <textarea name="inputText" v-model="inputText"></textarea>
+        </div>
+        <div id="button">
+            <button type="button" id="toWiki" v-on:click="clickButton">▶</button>
+        </div>
+        <div id="outputArea">
+            出力: <select name="outputType" id="outputType" v-model="selectedOutputType">
+                <option v-for="type in outputType" :value="type">{{type}}</option>
+            </select>
+            <br/>
+            <textarea name="outputText" v-model="outputText"></textarea>
+        </div>
+        <div>
+            <table id="correspondence table">
+            </table>
+        </div>
+    </div>
+
+    <div >
+        <p>使用方法</p>
+        <ol>
+            <li>
+                左のテキストエリアに変換したいテキストを貼り付ける。
+            </li>
+            <li>
+                入力形式を選択する
+            </li>
+            <li>
+                中央のボタンをクリックする
+            </li>
+        </ol>
+        MarkdownをpukiWikiに変換する際は入力、出力の形式を選択しなくても良い.
+    </div>
+
+    <!-- <script type="text/javascript" src="./src/correspondenceTable.js"></script> -->
+    <script type="text/javascript" src="./src/index.js"></script>
+</body>
+</html>

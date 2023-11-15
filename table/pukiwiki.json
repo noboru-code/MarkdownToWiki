@@ -1,0 +1,76 @@
+{
+    "inputType": "pukiWiki",
+    "outputTypeList": ["Markdown"],
+    "notations": [
+        {
+            "name": "見出し",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "太字",
+            "regexp": null,
+            "Markdown": "**$1**"
+        },
+        {
+            "name": "斜体",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "訂正線",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "リンク",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "引用",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "コード",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "チェックリスト",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "箇条書きリスト",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "番号付きリスト",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "ファイル",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "水平線",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "Table",
+            "regexp": null,
+            "Markdown": null
+        },
+        {
+            "name": "注釈",
+            "regexp": null,
+            "Markdown": null
+        }
+    ]
+}

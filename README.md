@@ -1,4 +1,4 @@
-# md-to-wiki
+# MarkdownToWiki
 
 
 ## 概要
